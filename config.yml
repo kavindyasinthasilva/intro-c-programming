@@ -1,0 +1,20 @@
+title: 'intro c programming '
+tagline: A brand new course on Learning Lab
+description: >-
+  This is use to how to learning git hub -with git and it is use to how to make
+  pull request and mage pull request and how to add commit and comment .git hub
+  user are know what is read .md and  it is make your course main ideas
+template:
+  repo: intro-c-programming-template
+  name: intro-c-programming
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
